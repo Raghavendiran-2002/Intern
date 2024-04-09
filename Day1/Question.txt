@@ -1,2 +1,4 @@
 1) Create a new repository and try conflicting and resolve it(Understanding)
-2) https://leetcode.com/problems/two-sum/description/
+2) Let's work on some logics
+  https://leetcode.com/problems/two-sum/description/
+
