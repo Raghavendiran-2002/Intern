@@ -3,3 +3,4 @@
 2) Let's work on some logics
   https://leetcode.com/problems/two-sum/description/
 
+3) How to remove accidentanl commit in Git
