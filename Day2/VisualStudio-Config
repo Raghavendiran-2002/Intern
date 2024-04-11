@@ -1,0 +1,5 @@
+Create App
+
+- "dotnet --version"
+- "dotnet new console"
+- "dotnet run"  
