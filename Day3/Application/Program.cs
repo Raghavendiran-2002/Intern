@@ -5,7 +5,8 @@
         static void Main(string[] args)
         {
             //Program1.Calculate();
-            Program2.GreatestNumber();
+            //Program2.GreatestNumber();
+            Program3.DivisibleBy7();
         }
     }
 }
