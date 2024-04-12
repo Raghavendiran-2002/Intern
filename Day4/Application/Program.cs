@@ -3,6 +3,13 @@ namespace Application
 {
     internal class Program
     {
+        /// <summary>
+        /// Create new Doctor Object
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>
+        /// Doctor object
+        /// </returns>
         Doctor CreateDoctorByTakingDetailsFromConsole(int id)
         {
             Doctor doctor = new Doctor(id);
@@ -30,29 +37,42 @@ namespace Application
             return doctor;
         }
 
+
+
    
         static void Main(string[] args)
         {
-            
-           
-            Program program = new Program();
-            Doctor[] doctors = new Doctor[3];
-            for (int i = 0; i < doctors.Length; i++)
+            bool verifyCard = true;
+            // For Q5 -> set verifyCard = true;
+            // For Q1 & Q2 & Q3 & Q4 -> set verifyCard = false;
+
+            if (verifyCard)
             {
-                Console.WriteLine($"Doctor {i+1}");
-                doctors[i] = program.CreateDoctorByTakingDetailsFromConsole(101 + i);
+                string cardNumber = ValidateCardClass.GetValidCardNumber();
+                bool isValid = ValidateCardClass.ValidateCard(cardNumber);
+                Console.WriteLine($"Card number {cardNumber} is {(!isValid ? "invalid" :"valid")}");
             }
-            for (int i = 0; i < doctors.Length; i++)
+            else
             {
-                Console.WriteLine($"Doctor {i + 1}");
-                doctors[i].PrintDoctorDetails();
-            }
-            Console.WriteLine("Find Speciality doctor : ");
-            string search = Console.ReadLine();
-            for (int i = 0; i < doctors.Length; i++)
-            {
-                if (doctors[i].Speciality == search)
+                Program program = new Program();
+                Doctor[] doctors = new Doctor[3];
+                for (int i = 0; i < doctors.Length; i++)
+                {
+                    Console.WriteLine($"Doctor {i + 1}");
+                    doctors[i] = program.CreateDoctorByTakingDetailsFromConsole(101 + i);
+                }
+                for (int i = 0; i < doctors.Length; i++)
+                {
+                    Console.WriteLine($"Doctor {i + 1}");
                     doctors[i].PrintDoctorDetails();
+                }
+                Console.WriteLine("Find Speciality doctor : ");
+                string search = Console.ReadLine();
+                for (int i = 0; i < doctors.Length; i++)
+                {
+                    if (doctors[i].Speciality == search)
+                        doctors[i].PrintDoctorDetails();
+                }
             }
         }
     }
