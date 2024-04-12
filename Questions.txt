@@ -1,0 +1,55 @@
+Day 1 : 
+
+
+1) Create a new repository and try conflicting and resolve it(Understanding)
+2) Lets work on some logics
+2.1)https://leetcode.com/problems/two-sum/description/
+2.3)https://leetcode.com/problems/palindrome-number/description/
+
+
+Day 2 : 
+
+1) Advance Git - Commands
+
+Day 3 : 
+
+1) Create a application that take 2 numbers and find its sum, product and divide the first by second, also supract the second from the first. 
+Include another method to find the remainder when the first number is divided by second
+
+2)  create an application that will find the greatest of the given numbers. Take input until the user enters a negative number
+
+3) Find the avearage of all the numbers that are divisible by 7. Take input until the user enters a negative number
+
+4) Find the length of the given user's name
+
+5) Create a application that will take username and password from user. check if username is "ABC" and passwod is "123". 
+Print error message if username or password is wrong
+Allow user 3 attemts.
+After 3rd attempt if user enters invalid credentials then print msg to intimate user taht he/she has exceeded the number of attempts and stop
+
+7) Take a string from user the words seperated by comma(","). Seperate the words and find the words with the least number of repeating vowels. print the count and the word. If there is a tie then print all the words that tie for the least
+
+8) Learn datatypes in C#
+Ref: https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/builtin-types/built-in-types
+
+9) Operators
+https://learn.microsoft.com/en-us/dotnet/csharp/language-reference/operators/
+
+
+Day 4 : 
+
+1) Create a Doctor class with details
+Id, Name, Age, Exp, Qualification, Speciality
+
+2) Create an array of doctors
+
+3) Print the array
+
+4) Given a speciality print the doctor details in it
+
+5) 4477468343113002
+2003113438647744 - Reverse number
+2+ 0*2 +0+ 3*2 +1+ 1*2 +3+ 4*2 +3+ 8*2 +6+ 4*2 +7+ 7*2 +4+ 4*2 - Even position number *2
+2+ 0 +0+ 6 +1+ 2 +3+ 8 +3+ 16 +6+ 8 +7+ 14 +4+ 8 - 2 digits sum
+2+ 0 +0+ 6 +1+ 2 +3+ 8 +3+ 7 +6+ 8 +7+ 5 +4+ 8 - total
+70%10 ==0 then valid
