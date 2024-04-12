@@ -7,3 +7,6 @@ Day 1 :
 2.3)https://leetcode.com/problems/palindrome-number/description/
 
 
+Day 2 : 
+
+1) Advance Git - Commands
