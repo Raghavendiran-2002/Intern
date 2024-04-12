@@ -1,0 +1,9 @@
+Day 1 : 
+
+
+1) Create a new repository and try conflicting and resolve it(Understanding)
+2) Lets work on some logics
+2.1)https://leetcode.com/problems/two-sum/description/
+2.3)https://leetcode.com/problems/palindrome-number/description/
+
+
