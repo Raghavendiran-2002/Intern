@@ -37,6 +37,8 @@ namespace Application
             Speciality = spec;  
 
         }
+
+   
         /// <summary>
         /// Prints all Details of the Doctor
         /// </summary>

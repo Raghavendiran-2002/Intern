@@ -30,6 +30,7 @@ namespace Application
             return doctor;
         }
 
+   
         static void Main(string[] args)
         {
             
@@ -45,6 +46,13 @@ namespace Application
             {
                 Console.WriteLine($"Doctor {i + 1}");
                 doctors[i].PrintDoctorDetails();
+            }
+            Console.WriteLine("Find Speciality doctor : ");
+            string search = Console.ReadLine();
+            for (int i = 0; i < doctors.Length; i++)
+            {
+                if (doctors[i].Speciality == search)
+                    doctors[i].PrintDoctorDetails();
             }
         }
     }
