@@ -1,0 +1,15 @@
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.AssemblyInfoInputs.cache
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.AssemblyInfo.cs
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.sourcelink.json
+C:\Users\VC\Documents\Intern\Day4\Application\bin\Debug\net8.0\Application.exe
+C:\Users\VC\Documents\Intern\Day4\Application\bin\Debug\net8.0\Application.deps.json
+C:\Users\VC\Documents\Intern\Day4\Application\bin\Debug\net8.0\Application.runtimeconfig.json
+C:\Users\VC\Documents\Intern\Day4\Application\bin\Debug\net8.0\Application.dll
+C:\Users\VC\Documents\Intern\Day4\Application\bin\Debug\net8.0\Application.pdb
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.dll
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\refint\Application.dll
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.pdb
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\Application.genruntimeconfig.cache
+C:\Users\VC\Documents\Intern\Day4\Application\obj\Debug\net8.0\ref\Application.dll
