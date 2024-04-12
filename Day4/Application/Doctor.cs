@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application
 {
-    internal class Doctor
+    public class Doctor
     {
         public int Id { get; set; }
         public string Name { get; set; }
@@ -42,16 +42,16 @@ namespace Application
         /// </summary>
         public void PrintDoctorDetails()
         {
-            Console.WriteLine($"Doctor Id\t:\t{Id}");
-            Console.WriteLine($"Doctor Name\t:\t{Name}");
+            Console.WriteLine($"Id\t:\t{Id}");
+            Console.WriteLine($"Name\t:\t{Name}");
 
-            Console.WriteLine($"Doctor Age\t:\t{Age}");
+            Console.WriteLine($"Age\t:\t{Age}");
 
-            Console.WriteLine($"Doctor Experience\t:\t{Experience}");
+            Console.WriteLine($"Experience\t:\t{Experience}");
 
-            Console.WriteLine($"Doctor Qualification\t:\t{Qualification}");
+            Console.WriteLine($"Qualification\t:\t{Qualification}");
 
-            Console.WriteLine($"Doctor Speciality\t:\t{Speciality}");
+            Console.WriteLine($"Speciality\t:\t{Speciality}");
 
         }
 
