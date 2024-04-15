@@ -10,6 +10,9 @@ namespace RequestTrackerApplication
         {
             employees = new Employee[3];
         }
+        /// <summary>
+        /// Prints the list of operations performed by the application
+        /// </summary>
         void PrintMenu()
         {
             Console.WriteLine("1. Add Employee");
@@ -19,6 +22,9 @@ namespace RequestTrackerApplication
             Console.WriteLine("5. Search & Delete Employee by ID");
             Console.WriteLine("0. Exit");
         }
+        /// <summary>
+        /// Get user input to perform specific operation
+        /// </summary>
         void EmployeeInteraction()
         {
             int choice = 0;
@@ -53,6 +59,9 @@ namespace RequestTrackerApplication
                 }
             } while (choice != 0);
         }
+        /// <summary>
+        /// Add new Employee
+        /// </summary>
         void AddEmployee()
         {
             if (employees[employees.Length - 1] != null)
@@ -69,6 +78,9 @@ namespace RequestTrackerApplication
             }
 
         }
+        /// <summary>
+        ///  Print all the employees in the array
+        /// </summary>
         void PrintAllEmployees()
         {
             if (employees[0] == null)
@@ -82,6 +94,10 @@ namespace RequestTrackerApplication
                     PrintEmployee(employees[i]);
             }
         }
+        /// <summary>
+        /// Get User input from the console
+        /// </summary>
+        /// <returns> int (ID) </returns>
         int GetIdFromConsole()
         {
             int id = 0;
@@ -92,6 +108,9 @@ namespace RequestTrackerApplication
             }
             return id;
         }
+        /// <summary>
+        /// Search and Print Employee By ID
+        /// </summary>
         void SearchAndPrintEmployee()
         {
             Console.WriteLine("Print One employee");
@@ -104,6 +123,9 @@ namespace RequestTrackerApplication
             }
             PrintEmployee(employee);
         }
+        /// <summary>
+        /// Search and Update Name of Employee By ID
+        /// </summary>
         void SearchAndUpdateNameOfEmployee()
         {
             Console.WriteLine("Please enter Employee ID to update name : ")
@@ -131,6 +153,9 @@ namespace RequestTrackerApplication
                 }
             }
         }
+        /// <summary>
+        /// Search and Delete Employee By ID
+        /// </summary>
         void SearchAndDeleteEmployee()
         {
             Console.WriteLine("Please enter ID to be deleted : ");
@@ -146,6 +171,11 @@ namespace RequestTrackerApplication
             }
             Console.WriteLine("Invalid Employee Id");
         }
+        /// <summary>
+        /// Search Employee By ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Employee Object</returns>
         Employee? SearchEmployeeById(int id)
         {
             Employee employee = null;
@@ -160,6 +190,11 @@ namespace RequestTrackerApplication
             }
             return employee;
         }
+        /// <summary>
+        /// Create new Employee By ID
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns>Employee Object</returns>
         Employee CreateEmployee(int id)
         {
             Employee employee = new Employee();
@@ -167,6 +202,10 @@ namespace RequestTrackerApplication
             employee.BuildEmployeeFromConsole();
             return employee;
         }
+        /// <summary>
+        /// Print Employee by Employee Object
+        /// </summary>
+        /// <param name="employee"></param>
 
         void PrintEmployee(Employee employee)
         {
@@ -175,7 +214,9 @@ namespace RequestTrackerApplication
             Console.WriteLine("---------------------------");
         }
 
-        
+        /// <summary>
+        ///  Basic of Array (unused)
+        /// </summary>
         void UnderstandingArray()
         {
             int[] numbers = { 112, 313, 444, 672, 999 };

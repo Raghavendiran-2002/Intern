@@ -39,6 +39,9 @@
             Salary = salary;
         }
 
+        /// <summary>
+        /// Create new employee from console by user input
+        /// </summary>
         public void BuildEmployeeFromConsole()
         {
             Console.WriteLine("Please enter the Name");
@@ -49,6 +52,9 @@
             Salary = Convert.ToDouble(Console.ReadLine());
         }
 
+        /// <summary>
+        /// Print Employee Details
+        /// </summary>
         public void PrintEmployeeDetails()
         {
             Console.WriteLine("Employee Id : " + Id);
