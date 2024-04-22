@@ -15,7 +15,7 @@ namespace MovieBookingSystem
         /// <param name="movie"></param>
         public void Print(Movie movie)
         {
-            Console.WriteLine($"Movie Id : {movie.Id}\nTitle : {movie.Title}\nGenre : {movie.Genre}\nDuration : {movie.Duration}\nScreeningTimes : {movie.ScreeningTimes.ToString()}");
+        //    Console.WriteLine($"Movie Id : {movie.Id}\nTitle : {movie.Title}\nGenre : {movie.Genre}\nDuration : {movie.Duration}\nScreeningTimes : {movie.ScreeningTimes.ToString()}");
         }
         /// <summary>
         /// Print Booking

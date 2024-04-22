@@ -8,6 +8,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="NUnit" Version="4.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\MovieBookingBLLibrary\MovieBookingBLLibrary.csproj" />
     <ProjectReference Include="..\MovieBookingModelLibrary\MovieBookingModelLibrary.csproj" />
   </ItemGroup>
