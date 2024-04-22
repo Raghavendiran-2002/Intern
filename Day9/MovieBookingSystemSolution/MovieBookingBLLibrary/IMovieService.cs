@@ -9,8 +9,8 @@ namespace MovieBookingBLLibrary
 {
     public interface IMovieService
     {
-        void InitMovies();
-        List<Movie> ListAllMovies();
-
+        //void InitMovies();
+        //List<Movie> ListAllMovies();
+        void ListAllMovies();
     }
 }

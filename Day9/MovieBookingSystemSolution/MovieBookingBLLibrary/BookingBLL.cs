@@ -10,31 +10,50 @@ namespace MovieBookingBLLibrary
 {
     public class BookingBLL
     {
-        BookingRepository booking = new BookingRepository();
+        public static BookingRepository booking = new BookingRepository();
 
-        public void BookTicket()
+        public void BookTicket(MovieBLL mov, BookingConfirmationBLL bookConB)
         {
-            Console.WriteLine("Customer Name : ");
-            string cn = Console.ReadLine() ?? string.Empty;
-            Console.WriteLine("Contact Information : ");
-            string ci = Console.ReadLine() ?? string.Empty;
-            Console.WriteLine("Selected Movie : ");
-            int mo = Convert.ToInt32(Console.ReadLine());
-            Movie m =new MovieRepository().Get(mo);
-            Console.WriteLine("Number Of Tickets : ");
-            int tik = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("ScreeningTime : ");
-            DateTime dt;
-            if(DateTime.TryParse(Console.ReadLine(), out dt)) 
+            Console.WriteLine("\n\nCustomer Name :");
+            string cn = Console.ReadLine();
+            Console.WriteLine("\nCustomer Information :");
+            string ci = Console.ReadLine();
+            //Console.WriteLine("\nSelected Movie :");
+            //string movieTitle = Console.ReadLine();
+            string movieTitle = mov.ChooseMovieName();
+            if (mov.isMovieListed(movieTitle))
+                throw new UserException("Movie Not avaialble");
+            Console.WriteLine("Available ScreenTiming ");
+            mov.ListScreenTiming(movieTitle);
+            Console.WriteLine("Choose in 1-" + mov.LenghtOfScreenTiming(movieTitle));
+            int cnt = Convert.ToInt32(Console.ReadLine());
+            DateTime st = mov.ChooseScreenTime(movieTitle, cnt);
+            if (st < DateTime.Now)
+                throw new UserException("Invalid ScreenTiming");
+            Console.WriteLine("\nNumberOfTickets :");
+            int tk = Convert.ToInt32(Console.ReadLine());
+            booking.Add(new Booking(cn, ci, movieTitle, st, tk));
+            Console.WriteLine("Booking Added!!!");
+            ConfirmBooking(cn,movieTitle,st, tk , bookConB);
+        }
+
+        public void ListBooking()
+        {
+            if (booking.GetAll() == null)
             {
-                Booking b = new Booking(cn,ci,m,dt,tik);
-                Console.WriteLine(cn + "   Done ");
-                booking.Add(b);
+                Console.WriteLine("No Booking Found!!!");
+                return;
+            }
+            foreach (Booking b in booking.GetAll())
+            {
+                Console.WriteLine(b + "\n");
             }
         }
-        public List<Booking> ListAllBooking()
+
+        public static void ConfirmBooking(string username, string movie, DateTime screentime, int noofTik, BookingConfirmationBLL book) 
         {
-            return booking.GetAll();
+            book.BookConfirmationTicket(movie,username, screentime, noofTik);
         }
+
     }
 }
