@@ -9,13 +9,13 @@ namespace MovieBookingModelLibrary
     public class Booking
     {
 
-        public required int Id { get; set; }
-        public required string CustomerName { get; set; }
-        public required string ContactInformation { get; set; }
+        public  int Id { get; set; }
+        public  string CustomerName { get; set; }
+        public  string ContactInformation { get; set; }
 
-        public required Movie SelectedMovie { get; set; }
-        public required DateTime ScreeningTime {  get; set; }
-        public required int NumberOfTickets { get; set; }
+        public  Movie SelectedMovie { get; set; }
+        public  DateTime ScreeningTime {  get; set; }
+        public  int NumberOfTickets { get; set; }
         public Booking(int id, string customerName, string contactInformation, Movie selectedMovie, DateTime screeningTime, int numberOfTickets)
         {
             Id = id;
@@ -25,11 +25,19 @@ namespace MovieBookingModelLibrary
             ScreeningTime = screeningTime;
             NumberOfTickets = numberOfTickets;
         }
+        public Booking(string customerName, string contactInformation, Movie selectedMovie, DateTime screeningTime, int numberOfTickets)
+        {
+            CustomerName = customerName;
+            ContactInformation = contactInformation;
+            SelectedMovie = selectedMovie;
+            ScreeningTime = screeningTime;
+            NumberOfTickets = numberOfTickets;
+        }
         public override string ToString()
         {
-            return "Booking Id : " + Id + "\nCustomerName : " + CustomerName +
+            return "Booking Id : " + Id  + "\nCustomerName : " + CustomerName +
                 "\nContactInformation : " + ContactInformation + "\nSelected Movie : " 
-                + SelectedMovie.Title + "\nScreeningTime : " + ScreeningTime +
+                + SelectedMovie.Title?? "none" + "\nScreeningTime : " + ScreeningTime +
                 "\nNumberOfTickets : " + NumberOfTickets;
         }
     }

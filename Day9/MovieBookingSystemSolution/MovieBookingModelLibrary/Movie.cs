@@ -2,13 +2,13 @@
 {
     public class Movie
     {
-        public required int Id { get; set; }
-        public required string Title { get; set; }
-        public required string Genre { get; set; } 
-        public required string Duration { get; set; }
-        public required List<DateTime> ScreeningTimes { get; set; }
+        public  int Id { get; set; }
+        public  string Title { get; set; }
+        public  string Genre { get; set; } 
+        public  DateTime Duration { get; set; }
+        public  List<DateTime> ScreeningTimes { get; set; }
 
-        public Movie(int id, string title, string genre, string duration)
+        public Movie(int id, string title, string genre, DateTime duration)
         {
             Id = id;
             Title = title;
@@ -16,16 +16,34 @@
             Duration = duration;
             ScreeningTimes = new List<DateTime>();
         }
-
-        public void AddScreeningTime(DateTime time)
+        public Movie( string title, string genre, DateTime duration)
         {
-            ScreeningTimes.Add(time);   
+            
+            Title = title;
+            Genre = genre;
+            Duration = duration;
+            ScreeningTimes = new List<DateTime>();
         }
+
+        public Movie(string title, string genre, DateTime duration, List<DateTime> screentime)
+        {
+
+            Title = title;
+            Genre = genre;
+            Duration = duration;
+            ScreeningTimes = screentime;
+        }
+      
         public override string ToString()
         {
-            return "Movie Id : " + Id + "\nTitle : " + Title +
+            string st = "";
+            foreach(DateTime d in ScreeningTimes)
+            {
+                st += d.ToString() + "\t";
+            }
+            return "\n\nMovie Id : " + Id + "\nTitle : " + Title +
                 "\nGenre : " + Genre + "\nDuration : "
-                + Duration + "\nScreeningTime : " + ScreeningTimes.ToString();
+                + Duration + "\nScreeningTime : " + st;
               
         }
     }
