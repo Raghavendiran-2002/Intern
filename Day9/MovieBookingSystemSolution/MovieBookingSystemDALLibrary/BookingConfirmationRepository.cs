@@ -7,34 +7,27 @@ using System.Threading.Tasks;
 
 namespace MovieBookingSystemDALLibrary
 {
-    public class BookingConfirmationRepository : IRepository<int, BookingConfirmation>
+    public class BookingConfirmationRepository : IRepository<string, BookingConfirmation>
 
     {
-        readonly Dictionary<int, BookingConfirmation> _bookingConfirmations;
+        readonly Dictionary<string, BookingConfirmation> _bookingConfirmations;
 
         public BookingConfirmationRepository()
         {
-            _bookingConfirmations = new Dictionary<int, BookingConfirmation>();
+            _bookingConfirmations = new Dictionary<string, BookingConfirmation>();
         }
-        int GenerateId()
-        {
-            if (_bookingConfirmations.Count == 0)
-                return 0;
-            int id = _bookingConfirmations.Keys.Max();
-            return ++id;
-        }
+        
         public BookingConfirmation Add(BookingConfirmation item)
         {
             if (_bookingConfirmations.ContainsValue(item)) return null;
-            item.Id = GenerateId();
 
-            _bookingConfirmations.Add(item.Id, item);
+            _bookingConfirmations.Add(item.BookingReference, item);
             return item;
 
         }
 
 
-        public BookingConfirmation Get(int key)
+        public BookingConfirmation Get(string key)
         {
             return _bookingConfirmations.ContainsKey(key) ? _bookingConfirmations[key] : null;
         }
@@ -47,15 +40,15 @@ namespace MovieBookingSystemDALLibrary
 
         public BookingConfirmation Update(BookingConfirmation item)
         {
-            if (_bookingConfirmations.ContainsKey(item.Id))
+            if (_bookingConfirmations.ContainsKey(item.BookingReference))
             {
-                _bookingConfirmations[item.Id] = item;
+                _bookingConfirmations[item.BookingReference] = item;
                 return item;
             }
             return null;
         }
 
-        public BookingConfirmation Delete(int key)
+        public BookingConfirmation Delete(string key)
         {
             if (_bookingConfirmations.ContainsKey(key))
             {
