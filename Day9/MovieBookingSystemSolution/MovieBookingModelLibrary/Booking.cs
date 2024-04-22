@@ -25,5 +25,12 @@ namespace MovieBookingModelLibrary
             ScreeningTime = screeningTime;
             NumberOfTickets = numberOfTickets;
         }
+        public override string ToString()
+        {
+            return "Booking Id : " + Id + "\nCustomerName : " + CustomerName +
+                "\nContactInformation : " + ContactInformation + "\nSelected Movie : " 
+                + SelectedMovie.Title + "\nScreeningTime : " + ScreeningTime +
+                "\nNumberOfTickets : " + NumberOfTickets;
+        }
     }
 }

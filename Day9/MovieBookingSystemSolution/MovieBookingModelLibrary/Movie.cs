@@ -21,5 +21,12 @@
         {
             ScreeningTimes.Add(time);   
         }
+        public override string ToString()
+        {
+            return "Movie Id : " + Id + "\nTitle : " + Title +
+                "\nGenre : " + Genre + "\nDuration : "
+                + Duration + "\nScreeningTime : " + ScreeningTimes.ToString();
+              
+        }
     }
 }

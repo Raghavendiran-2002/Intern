@@ -11,14 +11,19 @@ namespace MovieBookingModelLibrary
 
         public required int Id { get; set; }
         public required string BookingReference { get; set; }    
-        public required string PaymentId { get; set; }
+      
         public required bool IsPaid { get; set; }
 
-        public Payment(int id,string bookingReference,string paymentId, bool isPaid) {
+        public Payment(int id,string bookingReference, bool isPaid) {
             Id = id;
             BookingReference = bookingReference;
             IsPaid = isPaid;
-            PaymentId = paymentId;
+           
+        }
+        public override string ToString()
+        {
+            return "Payment Id : " + Id + "\nBookingReference : " + BookingReference +
+                "\nIsPaid : " + IsPaid;
         }
     }
 }

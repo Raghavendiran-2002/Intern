@@ -24,5 +24,11 @@ namespace MovieBookingModelLibrary
             ScreeningTime = screenTime;
             TotalCost = totalCost;
         }
+        public override string ToString()
+        {
+            return "BookingConfirmation Id : " + Id + "\nBookingReference : " + BookingReference +
+                "\nMovie : " + Movie + "\nScreeningTime : " + ScreeningTime +
+                "\nTotalCost : " + TotalCost;
+        }
     }
 }
