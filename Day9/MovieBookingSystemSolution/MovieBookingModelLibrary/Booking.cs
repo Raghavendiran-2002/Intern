@@ -13,10 +13,10 @@ namespace MovieBookingModelLibrary
         public  string CustomerName { get; set; }
         public  string ContactInformation { get; set; }
 
-        public  Movie SelectedMovie { get; set; }
+        public  string SelectedMovie { get; set; }
         public  DateTime ScreeningTime {  get; set; }
         public  int NumberOfTickets { get; set; }
-        public Booking(int id, string customerName, string contactInformation, Movie selectedMovie, DateTime screeningTime, int numberOfTickets)
+        public Booking(int id, string customerName, string contactInformation, string selectedMovie, DateTime screeningTime, int numberOfTickets)
         {
             Id = id;
             CustomerName = customerName;
@@ -25,7 +25,7 @@ namespace MovieBookingModelLibrary
             ScreeningTime = screeningTime;
             NumberOfTickets = numberOfTickets;
         }
-        public Booking(string customerName, string contactInformation, Movie selectedMovie, DateTime screeningTime, int numberOfTickets)
+        public Booking(string customerName, string contactInformation, string selectedMovie, DateTime screeningTime, int numberOfTickets)
         {
             CustomerName = customerName;
             ContactInformation = contactInformation;
@@ -37,7 +37,7 @@ namespace MovieBookingModelLibrary
         {
             return "Booking Id : " + Id  + "\nCustomerName : " + CustomerName +
                 "\nContactInformation : " + ContactInformation + "\nSelected Movie : " 
-                + SelectedMovie.Title?? "none" + "\nScreeningTime : " + ScreeningTime +
+                + SelectedMovie  + "\nScreeningTime : " + ScreeningTime +
                 "\nNumberOfTickets : " + NumberOfTickets;
         }
     }

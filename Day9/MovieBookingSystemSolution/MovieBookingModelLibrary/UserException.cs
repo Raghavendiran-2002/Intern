@@ -10,9 +10,12 @@ namespace MovieBookingModelLibrary
     {
        public UserException(string msg):base(msg)
         {
-
+            Console.WriteLine(msg);
+        }
+        public class UserValidationException : Exception
+        {
+            public UserValidationException(string message) : base(message) { }
         }
 
-       
     }
 }

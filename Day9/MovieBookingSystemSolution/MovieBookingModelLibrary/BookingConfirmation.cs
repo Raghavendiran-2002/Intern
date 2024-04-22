@@ -9,14 +9,14 @@ namespace MovieBookingModelLibrary
     public class BookingConfirmation
     {
 
-        public required int Id { get; set; }
-        public required string BookingReference { get; set; }
-        public  required Movie Movie { get; set; }
-        public required DateTime ScreeningTime {get; set;}
+        public  int Id { get; set; }
+        public  string BookingReference { get; set; }
+        public   string Movie { get; set; }
+        public  DateTime ScreeningTime {get; set;}
 
-        public required float TotalCost { get; set;} 
+        public  double TotalCost { get; set;} 
 
-        public BookingConfirmation(int id, string bookingReference, Movie movie, DateTime screenTime,  float totalCost)
+        public BookingConfirmation(int id, string bookingReference, string movie, DateTime screenTime,  double totalCost)
         {
             Id = id;
             BookingReference = bookingReference;
@@ -24,6 +24,15 @@ namespace MovieBookingModelLibrary
             ScreeningTime = screenTime;
             TotalCost = totalCost;
         }
+        public BookingConfirmation(string bookingReference, string movie, DateTime screenTime, double totalCost)
+        {
+            BookingReference = bookingReference;
+            Movie = movie;
+            ScreeningTime = screenTime;
+            TotalCost = totalCost;
+        }
+
+        
         public override string ToString()
         {
             return "BookingConfirmation Id : " + Id + "\nBookingReference : " + BookingReference +
