@@ -2,13 +2,15 @@
 {
     public class Movie
     {
+        public required int Id { get; set; }
         public required string Title { get; set; }
         public required string Genre { get; set; } 
         public required string Duration { get; set; }
         public required List<DateTime> ScreeningTimes { get; set; }
 
-        public Movie(string title, string genre, string duration)
+        public Movie(int id, string title, string genre, string duration)
         {
+            Id = id;
             Title = title;
             Genre = genre;
             Duration = duration;

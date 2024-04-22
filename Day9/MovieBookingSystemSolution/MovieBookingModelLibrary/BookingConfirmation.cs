@@ -8,14 +8,17 @@ namespace MovieBookingModelLibrary
 {
     public class BookingConfirmation
     {
+
+        public required int Id { get; set; }
         public required string BookingReference { get; set; }
         public  required Movie Movie { get; set; }
         public required DateTime ScreeningTime {get; set;}
 
         public required float TotalCost { get; set;} 
 
-        public BookingConfirmation(string bookingReference, Movie movie, DateTime screenTime,  float totalCost)
+        public BookingConfirmation(int id, string bookingReference, Movie movie, DateTime screenTime,  float totalCost)
         {
+            Id = id;
             BookingReference = bookingReference;
             Movie = movie;
             ScreeningTime = screenTime;
