@@ -1,0 +1,16 @@
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\bin\Debug\net8.0\MovieBookingSystemDALLibrary.deps.json
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\bin\Debug\net8.0\MovieBookingSystemDALLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\bin\Debug\net8.0\MovieBookingSystemDALLibrary.pdb
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\bin\Debug\net8.0\MovieBookingModelLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\bin\Debug\net8.0\MovieBookingModelLibrary.pdb
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.csproj.AssemblyReference.cache
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.AssemblyInfoInputs.cache
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.AssemblyInfo.cs
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.csproj.CoreCompileInputs.cache
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.sourcelink.json
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBoo.C7598010.Up2Date
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\refint\MovieBookingSystemDALLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\MovieBookingSystemDALLibrary.pdb
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingSystemDALLibrary\obj\Debug\net8.0\ref\MovieBookingSystemDALLibrary.dll

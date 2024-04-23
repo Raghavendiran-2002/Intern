@@ -1,0 +1,197 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {
+      "NUnit/4.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/nunit.framework.dll": {
+            "related": ".legacy.xml;.xml"
+          },
+          "lib/net6.0/nunit.framework.legacy.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/NUnit.props": {}
+        }
+      },
+      "MovieBookingBLLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MovieBookingModelLibrary": "1.0.0",
+          "MovieBookingSystemDALLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieBookingBLLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieBookingBLLibrary.dll": {}
+        }
+      },
+      "MovieBookingModelLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/MovieBookingModelLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieBookingModelLibrary.dll": {}
+        }
+      },
+      "MovieBookingSystemDALLibrary/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "MovieBookingModelLibrary": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MovieBookingSystemDALLibrary.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MovieBookingSystemDALLibrary.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "NUnit/4.1.0": {
+      "sha512": "MT/DpAhjtiytzhTgTqIhBuWx4y26PKfDepYUHUM+5uv4TsryHC2jwFo5e6NhWkApCm/G6kZ80dRjdJFuAxq3rg==",
+      "type": "package",
+      "path": "nunit/4.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "CHANGES.md",
+        "LICENSE.txt",
+        "NOTICES.md",
+        "README.md",
+        "THIRD_PARTY_NOTICES.md",
+        "build/NUnit.props",
+        "icon.png",
+        "lib/net462/nunit.framework.dll",
+        "lib/net462/nunit.framework.legacy.dll",
+        "lib/net462/nunit.framework.legacy.xml",
+        "lib/net462/nunit.framework.xml",
+        "lib/net6.0/nunit.framework.dll",
+        "lib/net6.0/nunit.framework.legacy.dll",
+        "lib/net6.0/nunit.framework.legacy.xml",
+        "lib/net6.0/nunit.framework.xml",
+        "nunit.4.1.0.nupkg.sha512",
+        "nunit.nuspec"
+      ]
+    },
+    "MovieBookingBLLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MovieBookingBLLibrary/MovieBookingBLLibrary.csproj",
+      "msbuildProject": "../MovieBookingBLLibrary/MovieBookingBLLibrary.csproj"
+    },
+    "MovieBookingModelLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MovieBookingModelLibrary/MovieBookingModelLibrary.csproj",
+      "msbuildProject": "../MovieBookingModelLibrary/MovieBookingModelLibrary.csproj"
+    },
+    "MovieBookingSystemDALLibrary/1.0.0": {
+      "type": "project",
+      "path": "../MovieBookingSystemDALLibrary/MovieBookingSystemDALLibrary.csproj",
+      "msbuildProject": "../MovieBookingSystemDALLibrary/MovieBookingSystemDALLibrary.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net8.0": [
+      "MovieBookingBLLibrary >= 1.0.0",
+      "MovieBookingModelLibrary >= 1.0.0",
+      "NUnit >= 4.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\VC\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\MovieBookingSystem.csproj",
+      "projectName": "MovieBookingSystem",
+      "projectPath": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\MovieBookingSystem.csproj",
+      "packagesPath": "C:\\Users\\VC\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\VC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {
+            "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj": {
+              "projectPath": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj"
+            },
+            "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingModelLibrary\\MovieBookingModelLibrary.csproj": {
+              "projectPath": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingModelLibrary\\MovieBookingModelLibrary.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "dependencies": {
+          "NUnit": {
+            "target": "Package",
+            "version": "[4.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
