@@ -1,0 +1,285 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingbllibrary\\moviebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|solutionrelative:moviebookingbllibrary\\moviebll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingbllibrary\\bookingconfirmationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|solutionrelative:moviebookingbllibrary\\bookingconfirmationbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingbllibrary\\paymentbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|solutionrelative:moviebookingbllibrary\\paymentbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A45661-8BCA-4FE2-9CA1-907FF47FB870}|MovieBookingSystem\\MovieBookingSystem.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A45661-8BCA-4FE2-9CA1-907FF47FB870}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystemdallibrary\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|solutionrelative:moviebookingsystemdallibrary\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingbllibrary\\bookingbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|solutionrelative:moviebookingbllibrary\\bookingbll.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57039905-25C5-4990-9CE9-031355F467BF}|MovieBookingModelLibrary\\MovieBookingModelLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingmodellibrary\\bookingconfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57039905-25C5-4990-9CE9-031355F467BF}|MovieBookingModelLibrary\\MovieBookingModelLibrary.csproj|solutionrelative:moviebookingmodellibrary\\bookingconfirmation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystemdallibrary\\bookingconfirmationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|solutionrelative:moviebookingsystemdallibrary\\bookingconfirmationrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingbllibrary\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2D7201BC-1604-4193-B076-56B78F1D7C4C}|MovieBookingBLLibrary\\MovieBookingBLLibrary.csproj|solutionrelative:moviebookingbllibrary\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A45661-8BCA-4FE2-9CA1-907FF47FB870}|MovieBookingSystem\\MovieBookingSystem.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystem\\moviebookingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B4A45661-8BCA-4FE2-9CA1-907FF47FB870}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\moviebookingsystem.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{57039905-25C5-4990-9CE9-031355F467BF}|MovieBookingModelLibrary\\MovieBookingModelLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingmodellibrary\\userexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{57039905-25C5-4990-9CE9-031355F467BF}|MovieBookingModelLibrary\\MovieBookingModelLibrary.csproj|solutionrelative:moviebookingmodellibrary\\userexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4A45661-8BCA-4FE2-9CA1-907FF47FB870}|MovieBookingSystem\\MovieBookingSystem.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystem\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4A45661-8BCA-4FE2-9CA1-907FF47FB870}|MovieBookingSystem\\MovieBookingSystem.csproj|solutionrelative:moviebookingsystem\\consoleui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystemdallibrary\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|solutionrelative:moviebookingsystemdallibrary\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystemdallibrary\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|solutionrelative:moviebookingsystemdallibrary\\paymentrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystemdallibrary\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|solutionrelative:moviebookingsystemdallibrary\\bookingrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|c:\\users\\vc\\documents\\intern\\day9\\moviebookingsystemsolution\\moviebookingsystemdallibrary\\moviebookingsystemdallibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6CF826EB-99E9-4167-BBBF-F557D6826337}|MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj|solutionrelative:moviebookingsystemdallibrary\\moviebookingsystemdallibrary.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 237,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\Program.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\Program.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\Program.cs",
+              "RelativeToolTip": "MovieBookingSystem\\Program.cs",
+              "ViewState": "AQIAABMAAAAAAAAAAAAlwCoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:49:26.717Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "MovieRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\MovieRepository.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystemDALLibrary\\MovieRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\MovieRepository.cs",
+              "RelativeToolTip": "MovieBookingSystemDALLibrary\\MovieRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAACOAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T07:17:18.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MovieBLL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\MovieBLL.cs",
+              "RelativeDocumentMoniker": "MovieBookingBLLibrary\\MovieBLL.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\MovieBLL.cs",
+              "RelativeToolTip": "MovieBookingBLLibrary\\MovieBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAFoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:50:44.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BookingBLL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\BookingBLL.cs",
+              "RelativeDocumentMoniker": "MovieBookingBLLibrary\\BookingBLL.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\BookingBLL.cs",
+              "RelativeToolTip": "MovieBookingBLLibrary\\BookingBLL.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAIA+wBsAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T08:48:52.762Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IMovieService.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\IMovieService.cs",
+              "RelativeDocumentMoniker": "MovieBookingBLLibrary\\IMovieService.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\IMovieService.cs",
+              "RelativeToolTip": "MovieBookingBLLibrary\\IMovieService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T07:12:24.73Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "MovieBookingSystem.csproj",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\MovieBookingSystem.csproj",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\MovieBookingSystem.csproj",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\MovieBookingSystem.csproj",
+              "RelativeToolTip": "MovieBookingSystem\\MovieBookingSystem.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-22T10:30:36.258Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UserException.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingModelLibrary\\UserException.cs",
+              "RelativeDocumentMoniker": "MovieBookingModelLibrary\\UserException.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingModelLibrary\\UserException.cs",
+              "RelativeToolTip": "MovieBookingModelLibrary\\UserException.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAYwAwAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:29:48.935Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ConsoleUI.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\ConsoleUI.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystem\\ConsoleUI.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystem\\ConsoleUI.cs",
+              "RelativeToolTip": "MovieBookingSystem\\ConsoleUI.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAawBEAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T06:49:28.029Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\IRepository.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystemDALLibrary\\IRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\IRepository.cs",
+              "RelativeToolTip": "MovieBookingSystemDALLibrary\\IRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T02:21:09.322Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "PaymentRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\PaymentRepository.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystemDALLibrary\\PaymentRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\PaymentRepository.cs",
+              "RelativeToolTip": "MovieBookingSystemDALLibrary\\PaymentRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T02:21:13.81Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BookingRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\BookingRepository.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystemDALLibrary\\BookingRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\BookingRepository.cs",
+              "RelativeToolTip": "MovieBookingSystemDALLibrary\\BookingRepository.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwAkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T09:15:07.945Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "MovieBookingSystemDALLibrary.csproj",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj",
+              "RelativeDocumentMoniker": "MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj",
+              "RelativeToolTip": "MovieBookingSystemDALLibrary\\MovieBookingSystemDALLibrary.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-04-22T10:11:40.982Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentBLL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\PaymentBLL.cs",
+              "RelativeDocumentMoniker": "MovieBookingBLLibrary\\PaymentBLL.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\PaymentBLL.cs",
+              "RelativeToolTip": "MovieBookingBLLibrary\\PaymentBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T08:43:16.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingConfirmationBLL.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\BookingConfirmationBLL.cs",
+              "RelativeDocumentMoniker": "MovieBookingBLLibrary\\BookingConfirmationBLL.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingBLLibrary\\BookingConfirmationBLL.cs",
+              "RelativeToolTip": "MovieBookingBLLibrary\\BookingConfirmationBLL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-22T10:21:40.267Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BookingConfirmation.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingModelLibrary\\BookingConfirmation.cs",
+              "RelativeDocumentMoniker": "MovieBookingModelLibrary\\BookingConfirmation.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingModelLibrary\\BookingConfirmation.cs",
+              "RelativeToolTip": "MovieBookingModelLibrary\\BookingConfirmation.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABUAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T05:31:28.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BookingConfirmationRepository.cs",
+              "DocumentMoniker": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\BookingConfirmationRepository.cs",
+              "RelativeDocumentMoniker": "MovieBookingSystemDALLibrary\\BookingConfirmationRepository.cs",
+              "ToolTip": "C:\\Users\\VC\\Documents\\Intern\\Day9\\MovieBookingSystemSolution\\MovieBookingSystemDALLibrary\\BookingConfirmationRepository.cs",
+              "RelativeToolTip": "MovieBookingSystemDALLibrary\\BookingConfirmationRepository.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAkwC4AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-23T02:14:41.849Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

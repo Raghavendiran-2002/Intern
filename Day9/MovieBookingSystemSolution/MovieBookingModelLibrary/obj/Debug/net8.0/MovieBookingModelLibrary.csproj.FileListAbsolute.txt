@@ -1,0 +1,12 @@
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\bin\Debug\net8.0\MovieBookingModelLibrary.deps.json
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\bin\Debug\net8.0\MovieBookingModelLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\bin\Debug\net8.0\MovieBookingModelLibrary.pdb
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.AssemblyInfoInputs.cache
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.AssemblyInfo.cs
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.csproj.CoreCompileInputs.cache
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.sourcelink.json
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\refint\MovieBookingModelLibrary.dll
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\MovieBookingModelLibrary.pdb
+C:\Users\VC\Documents\Intern\Day9\MovieBookingSystemSolution\MovieBookingModelLibrary\obj\Debug\net8.0\ref\MovieBookingModelLibrary.dll
