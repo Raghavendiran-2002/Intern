@@ -22,15 +22,16 @@ namespace ShoppingDALLibrary
             if (customer != null)
             {
                 items.Remove(customer);
+                return customer;
             }
-            return customer;
+            throw new UserDefinedException.CustomerBL.NoCustomerIdFound();
         }
 
         public override Customer GetByKey(int key)
         {
             Customer customer = items.FirstOrDefault(p => p.Id == key);
             if(customer== null)
-                throw new UserDefinedException.NoCustomerWithGiveIdException();
+                throw new UserDefinedException.CustomerBL.NoCustomerIdFound();
             return customer;
         }
 

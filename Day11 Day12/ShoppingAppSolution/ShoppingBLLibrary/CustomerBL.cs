@@ -25,7 +25,7 @@ namespace ShoppingBLLibrary
             Customer customer = _customerRepo.GetByKey(customerId);
             if(customer == null)
             {
-                 throw new UserDefinedException.NoCustomerWithGiveIdException();
+                 throw new UserDefinedException.CustomerBL.NoCustomerIdFound();
 
             }
             _customerRepo.Delete(customerId);
@@ -40,7 +40,7 @@ namespace ShoppingBLLibrary
             if(customer != null) {
                 return customer;
             }
-            throw new UserDefinedException.NoCustomerWithGiveIdException();
+            throw new UserDefinedException.CustomerBL.NoCustomerIdFound();
         }
 
         public Customer UpdateCustomerName(int customerId, string name)

@@ -13,8 +13,9 @@ namespace ShoppingModelLibrary
         public string Name { get; set; }
         public int Age { get; set; }
         public Customer() { }
-        public Customer(string name, string phone, int age)
+        public Customer(int id, string name, string phone, int age)
         {
+            Id = id;
             Name = name;
             Phone = phone;
             Age = age;

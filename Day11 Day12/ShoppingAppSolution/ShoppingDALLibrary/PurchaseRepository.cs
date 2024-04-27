@@ -10,7 +10,7 @@ namespace ShoppingDALLibrary
 {
     public class PurchaseRepository : AbstractRepository<int, Purchase>
     {
-        readonly Dictionary<int, Purchase> _purchase;
+        static Dictionary<int, Purchase> _purchase;
 
         public PurchaseRepository()
         {
@@ -22,15 +22,19 @@ namespace ShoppingDALLibrary
             if (purchase != null)
             {
                 items.Remove(purchase);
+                return purchase;
             }
-            return purchase;
+            throw new UserDefinedException.PurchaseException("Item not found");
         }
 
         public override Purchase GetByKey(int key)
         {
             Purchase purchase = items.FirstOrDefault(p => p.Id == key);
             if (purchase == null)
-                throw new UserDefinedException.PurchaseException("Already Exist");
+            {
+                throw new UserDefinedException.PurchaseException("Item not found");
+                //return null;
+            }
             return purchase;
         }
 
