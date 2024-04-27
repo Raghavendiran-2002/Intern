@@ -8,6 +8,19 @@ namespace ShoppingModelLibrary.Exceptions
 {
     public class UserDefinedException
     {
+        public class CustomerBL 
+        {
+           public class NoCustomerIdFound : Exception
+            {
+                string msg;
+                public NoCustomerIdFound()
+                {
+                    msg = "No Customer Id Found";
+                }
+                public override string Message => msg;
+            }
+            
+        }
         public class NoCustomerWithGiveIdException : Exception
         {
             string message;

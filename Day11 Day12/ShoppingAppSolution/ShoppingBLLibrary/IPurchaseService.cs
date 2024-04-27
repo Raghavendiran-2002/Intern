@@ -17,6 +17,6 @@ namespace ShoppingBLLibrary
         Purchase GetPurchaseById(int purchaseId);
         Purchase DeletePurchase(int purchaseId);
 
-        Purchase ResetCartItemIntoPurchased(int purchaseId, CartItem cartItem);
+        Purchase ResetCartItemIntoPurchased(int purchaseId);
     }
 }

@@ -4,6 +4,7 @@ using ShoppingModelLibrary.Exceptions;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,6 +20,7 @@ namespace ShoppingBLLibrary
             _purchaseRepo = purchaseRepo;
         }
 
+        [ExcludeFromCodeCoverage]
         public Purchase AddPurchase(Purchase purchase)
         {
             Purchase purchasevalid = _purchaseRepo.GetByKey(purchase.Id);
@@ -89,7 +91,7 @@ namespace ShoppingBLLibrary
                 _purchaseRepo.Delete(purchaseId);
                 return purchase;
             }
-            throw new UserDefinedException.NoProductWithGiveIdException();
+            throw new UserDefinedException.PurchaseException("Item not found");
         }
 
         public double GenerateBill(Purchase purchasedItem)
@@ -122,14 +124,14 @@ namespace ShoppingBLLibrary
             throw new UserDefinedException.PurchaseException("Already Exist");
         }
 
-        public Purchase ResetCartItemIntoPurchased(int purchaseId, CartItem cartItem)
+        public Purchase ResetCartItemIntoPurchased(int purchaseId)
         {
             Purchase purchase = _purchaseRepo.GetByKey(purchaseId);
             if (purchase != null)
             {
                 return _purchaseRepo.Update(new Purchase());
             }
-            throw new UserDefinedException.NoProductWithGiveIdException();
+            throw new UserDefinedException.PurchaseException("Purchase Id Not Found");
         }
     }
 }

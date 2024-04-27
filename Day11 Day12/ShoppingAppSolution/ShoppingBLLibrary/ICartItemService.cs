@@ -13,7 +13,6 @@ namespace ShoppingBLLibrary
         CartItem AddProductIntoCart(CartItem cartitem);
         CartItem GetCartById(int cartId);
         CartItem DeleteCartItem(int cartId);
-
         CartItem UpdateCartItem(int cartId, CartItem cartItem);
     }
 }
