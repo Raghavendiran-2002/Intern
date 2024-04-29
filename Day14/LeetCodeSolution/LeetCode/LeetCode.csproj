@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\ExcelSheetColumnTitle\ExcelSheetColumnTitle.csproj" />
     <ProjectReference Include="..\MinimumDepthOfBinaryTree\MinimumDepthOfBinaryTree.csproj" />
   </ItemGroup>
 
