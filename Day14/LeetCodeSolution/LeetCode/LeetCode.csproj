@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ExcelSheetColumnTitle\ExcelSheetColumnTitle.csproj" />
+    <ProjectReference Include="..\LinkedListCycle\LinkedListCycle.csproj" />
     <ProjectReference Include="..\MinimumDepthOfBinaryTree\MinimumDepthOfBinaryTree.csproj" />
   </ItemGroup>
 

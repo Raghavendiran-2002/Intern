@@ -1,4 +1,5 @@
 ﻿using ExcelSheetColumnTitle;
+using LinkedListCycle;
 using MinimumDepthOfBinaryTree;
 
 namespace LeetCode
@@ -16,11 +17,17 @@ namespace LeetCode
             Console.WriteLine($"Column Number : {index} TitleInExcelSheet  : {ex.FindColumnTitleUsingNumber()}");
 
         }
+        public void LinkedListCycle()
+        {
+            DetectCycleInLinkedList detectcycle = new DetectCycleInLinkedList();
+            Console.WriteLine($"Is Cycle Detected  : {detectcycle.HasCycle()}, Detected At : {detectcycle.JoiningPoint}");
+        }
         static void Main(string[] args)
         {
             Program program = new Program();
             program.MinimumDepthOfBinaryTree();
-            program.ExcelSheetColumnTitles(28)
+            program.ExcelSheetColumnTitles(28);
+            program.LinkedListCycle();
         }
     }
 }
