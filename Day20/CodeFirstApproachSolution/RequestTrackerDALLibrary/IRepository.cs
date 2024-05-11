@@ -1,0 +1,12 @@
+﻿namespace RequestTrackerDALLibrary
+{
+    public interface IRepository<K, T> where T : class
+    {
+        public Task<T> Add(T entity);
+        public Task<T> Update(T entity);
+        public Task<T> Delete( K key);
+        public Task<T> Get(K key);
+        public Task<List<T>> GetAll(); 
+
+    }
+}
