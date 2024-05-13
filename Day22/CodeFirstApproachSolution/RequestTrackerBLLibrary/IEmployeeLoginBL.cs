@@ -12,6 +12,8 @@ namespace RequestTrackerBLLibrary
         public Task<bool> Login(Employee employee);
         public Task<Employee> Register(Employee employee);
 
+        public Task<string> CheckRole(int id);
         public Task<Employee> GetEmployeeById(int id);
+
     }
 }

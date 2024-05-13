@@ -13,6 +13,12 @@ namespace RequestTrackerBLLibrary
             _repository = repo;
         }
 
+        public async Task<string> CheckRole(int id)
+        {
+            var employee = await _repository.Get(id);
+            return employee.Role;
+        }
+
         public async Task<Employee> GetEmployeeById(int id)
         {
             var employee = await _repository.Get(id);

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace RequestTrackerDALLibrary
 {
-    public class SolutionFeedbackRepository : IRepository<int, SolutionFeedback>
+    public class SolutionFeedbackRepository : ISolutionFeedbackRepository
     {
         private readonly RequestTrackerContext _context;
         public SolutionFeedbackRepository(RequestTrackerContext context)
@@ -36,7 +36,7 @@ namespace RequestTrackerDALLibrary
 
         public async Task<SolutionFeedback> Get(int key)
         {
-            var solutionFeedback = await _context.Feedbacks.SingleOrDefault(e => e.Id == key);
+            var solutionFeedback = await _context.Feedbacks.SingleOrDefaultAsync(e => e.FeedbackId == key);
             return solutionFeedback;
         }
 
@@ -54,6 +54,13 @@ namespace RequestTrackerDALLibrary
                 _context.Entry<SolutionFeedback>(solutionFeedback).State = EntityState.Modified;
                 await _context.SaveChangesAsync();
             }
+            return solutionFeedback;
+        }
+
+        public async Task<List<SolutionFeedback>> GetFeedbackByEmployeeId(int id)
+        {
+            var solutionFeedback = await _context.Feedbacks.Where(e => e.FeedbackByEmployee == (_context.Employees.SingleOrDefault(em => em.Id == id))).ToListAsync();
+            if(solutionFeedback == null) { }
             return solutionFeedback;
         }
     }

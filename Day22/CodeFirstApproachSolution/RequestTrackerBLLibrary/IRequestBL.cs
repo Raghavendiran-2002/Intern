@@ -11,11 +11,8 @@ namespace RequestTrackerBLLibrary
     {
         public Task<Request> RaiseRequest( Request request);
         public Task<List<Request>> ViewAllRequest();
-
-      //  public Task<List<Request>> RequestRaiseByEmployeeId(int EmployeeId);
-        public Task<Request> MarkRequestAsClosedById(int requestNumber);
-
-        public Task<Employee> GetRaisedByEmployee(int requestNumber);
-        public Task<Employee> RequestClosedByEmployee(int requestNumber);
+        public Task<Request> MarkRequestAsClosedById(int requestNumber, int employeeId);
+        public Task<List<Request>> GetRequestsByUserId(int userId);
+        public Task<Request> GetRequestByUserId(int userId);
     }
 }

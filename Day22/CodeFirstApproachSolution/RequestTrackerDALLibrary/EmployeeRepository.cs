@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RequestTrackerDALLibrary
 {
-    public class EmployeeRepository : IRepository<int, Employee>
+    public class EmployeeRepository : IEmployeeRepository
     {
         private readonly RequestTrackerContext _context;
         public EmployeeRepository(RequestTrackerContext context) {

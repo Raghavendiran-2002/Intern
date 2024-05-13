@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace RequestTrackerDALLibrary
 {
-    public class RequestRepository : IRepository<int, Request>
+    public class RequestRepository : IRequestRepository
     {
         private readonly RequestTrackerContext _context;
         public RequestRepository(RequestTrackerContext context)
@@ -18,9 +18,18 @@ namespace RequestTrackerDALLibrary
         public async Task<Request> Add(Request entity)
         {
             _context.Add(entity);
-            await _context.SaveChangesAsync();
+            _context.SaveChanges();
             return entity;
         }
+
+        public async Task <List<Request>> GetByEmployeeId(int key)
+        {
+            var requests = await _context.Requests.Where(e => e.RaisedByEmployee == (_context.Employees.SingleOrDefault(ep => ep.Id == key))).ToListAsync();
+            if(requests == null)
+            { }
+            return requests;
+        }
+       
 
         public async Task<Request> Delete(int key)
         {
@@ -43,7 +52,10 @@ namespace RequestTrackerDALLibrary
         {
             return await _context.Requests.ToListAsync();
         }
-
+        public async Task<List<Request>> GetRequestByEmployee(Employee employee)
+        {
+            return await _context.Requests.Where(r=>r.RaisedByEmployee == employee).ToListAsync();
+        }
         public async Task<Request> Update(Request entity)
         {
             var request = await Get(entity.RequestNumber);
