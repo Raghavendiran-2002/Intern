@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerApp", "RequestTrackerApp\RequestTrackerApp.csproj", "{D62754AC-7EA3-47E7-AC2D-89F0091774AF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerModelLibrary", "RequestTrackerModelLibrary\RequestTrackerModelLibrary.csproj", "{5DE04D7C-9C38-47F7-B9D0-61787784210B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RequestTrackerDALLibrary", "RequestTrackerDALLibrary\RequestTrackerDALLibrary.csproj", "{BBAFB8F5-F585-4497-88AF-2ED1D66C987E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DE04D7C-9C38-47F7-B9D0-61787784210B} = {5DE04D7C-9C38-47F7-B9D0-61787784210B}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RequestTrackerBLLibrary", "RequestTrackerBLLibrary\RequestTrackerBLLibrary.csproj", "{12B2DC22-DA89-4F45-82F7-5665894A8F5E}"
+	ProjectSection(ProjectDependencies) = postProject
+		{5DE04D7C-9C38-47F7-B9D0-61787784210B} = {5DE04D7C-9C38-47F7-B9D0-61787784210B}
+		{BBAFB8F5-F585-4497-88AF-2ED1D66C987E} = {BBAFB8F5-F585-4497-88AF-2ED1D66C987E}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D62754AC-7EA3-47E7-AC2D-89F0091774AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D62754AC-7EA3-47E7-AC2D-89F0091774AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D62754AC-7EA3-47E7-AC2D-89F0091774AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D62754AC-7EA3-47E7-AC2D-89F0091774AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DE04D7C-9C38-47F7-B9D0-61787784210B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DE04D7C-9C38-47F7-B9D0-61787784210B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DE04D7C-9C38-47F7-B9D0-61787784210B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DE04D7C-9C38-47F7-B9D0-61787784210B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBAFB8F5-F585-4497-88AF-2ED1D66C987E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBAFB8F5-F585-4497-88AF-2ED1D66C987E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBAFB8F5-F585-4497-88AF-2ED1D66C987E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBAFB8F5-F585-4497-88AF-2ED1D66C987E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12B2DC22-DA89-4F45-82F7-5665894A8F5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12B2DC22-DA89-4F45-82F7-5665894A8F5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12B2DC22-DA89-4F45-82F7-5665894A8F5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12B2DC22-DA89-4F45-82F7-5665894A8F5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {7764A323-B3D4-4060-9935-9AABBEC3F91A}
+	EndGlobalSection
+EndGlobal
