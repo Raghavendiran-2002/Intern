@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "9ea69ee8-34df-4b77-9854-5f53e8f13ccb",
+		"name": "Pizza",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19895253"
+	},
+	"item": [
+		{
+			"name": "GetAllPizza",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBJZCI6IjEwMiIsImV4cCI6MTcxNjAyNjE0Nn0.2MEUwbT1XTijd5rcI5SM9ypknDRivK8Cm8FnhQOiCbA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5191/api/Pizza/GetAllPizza",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"Pizza",
+						"GetAllPizza"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PizzaInStock",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBJZCI6IjEwMiIsImV4cCI6MTcxNjAyNjE0Nn0.2MEUwbT1XTijd5rcI5SM9ypknDRivK8Cm8FnhQOiCbA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5191/api/Pizza/GetPizzaInStock",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"Pizza",
+						"GetPizzaInStock"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 102,\r\n  \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5191/api/User/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"User",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userName\": \"Raghav\",\r\n  \"password\": \"123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5191/api/User/Register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"User",
+						"Register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "AddPizza",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBJZCI6IjEwMiIsImV4cCI6MTcxNjAyNjE0Nn0.2MEUwbT1XTijd5rcI5SM9ypknDRivK8Cm8FnhQOiCbA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"name\": \"Zucca\",\r\n  \"price\": 400,\r\n  \"stocksQuantity\": 1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5191/api/Pizza/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"Pizza",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrders",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBJZCI6IjEwMiIsImV4cCI6MTcxNjAyNjE0Nn0.2MEUwbT1XTijd5rcI5SM9ypknDRivK8Cm8FnhQOiCbA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5191/api/Order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"Order"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PostOrder",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbXBJZCI6IjEwMiIsImV4cCI6MTcxNjAyNjE0Nn0.2MEUwbT1XTijd5rcI5SM9ypknDRivK8Cm8FnhQOiCbA",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"userId\": 101,\r\n  \"pizzaId\": 102\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5191/api/Order",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5191",
+					"path": [
+						"api",
+						"Order"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
