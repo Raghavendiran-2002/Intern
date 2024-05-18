@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "m6yGQXLPbImZStzbrNesVIvJmDi40Yo2DTrt4fZmBdM=",
+  "Source": "EmployeeRequestTrackerAPI",
+  "BasePath": "_content/EmployeeRequestTrackerAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
