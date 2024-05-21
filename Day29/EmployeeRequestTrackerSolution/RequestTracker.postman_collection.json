@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "cc8ce11e-faac-4dbd-87cc-975e11c362be",
+		"name": "RequestTracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19895253"
+	},
+	"item": [
+		{
+			"name": "GetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5072/api/Employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5072",
+					"path": [
+						"api",
+						"Employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "PutEmployee",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5072/api/Employee?id=101&phone=3324543265",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5072",
+					"path": [
+						"api",
+						"Employee"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "101"
+						},
+						{
+							"key": "phone",
+							"value": "3324543265"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateEmployeePhoneNumber",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5072/api/Employee?id=101&phone=3534643",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5072",
+					"path": [
+						"api",
+						"Employee"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "101"
+						},
+						{
+							"key": "phone",
+							"value": "3534643"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEmployeeByPhone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5072/api/Employee/GetEmployeeByPhone?phone=1324214",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5072",
+					"path": [
+						"api",
+						"Employee",
+						"GetEmployeeByPhone"
+					],
+					"query": [
+						{
+							"key": "phone",
+							"value": "1324214"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
