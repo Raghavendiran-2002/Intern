@@ -1,0 +1,74 @@
+User Table : 
+    - UserId (primary key)
+    - Username
+    - Password
+    - PasswordHash
+    - Email
+    - Name
+    - Address
+    - PhoneNumber
+    - Role
+    - CreatedDate
+    - UpdatedDate
+
+Product Table : 
+    - ProductId (primary key)
+    - ProductName
+    - Description
+    - Price
+    - ImageUrl
+    - Stock
+    - CategoryId (foreign key)
+    - Discount (foreign key)
+
+Category Table : 
+    - CategoryId (primary key)
+    - CategoryName
+    - Description
+
+Discount Table : 
+    - DiscountId (primary key)
+    - DiscountName
+    - DiscountPercent
+    - StartDate
+    - EndDate
+    - CreatedAt
+    - UpdatedAt
+
+Shopping Cart Table : 
+    - CartId (primary key)
+    - UserId (foreign key)
+    - ProductId (foreign key)
+    - Quantity
+    - AddedAt
+
+Order Table : 
+    - OrderId (primary key)
+    - UserId (foreign key)
+    - OrderDate
+    - TotalPrice
+    - Status
+    - ShippingAddress 
+
+Order Item Table : 
+    - OrderItemId (primary key)
+    - OrderId (foreign key)
+    - ProductId (foreign key)
+    - Quantity
+    - PricePerProduct
+
+Review Table : 
+    - ReviewId (primary key)
+    - UserId (foreign key)
+    - ProductId (foreign key)
+    - Rating 
+    - Comment
+    - CreatedAt
+
+Payment Table : 
+    - PaymentId (primary key)
+    - OrderId (foreign key)
+    - PaymentDate
+    - Amount
+    - PaymentMethod
+    - Status

@@ -1,0 +1,52 @@
+Registration and Login Endpoints :
+    1) Register [POST] / Admin User
+    2) Login [POST] / Admin User
+    3) Logout [POST] / Admin User
+
+User : 
+    1) View Profile by ID [GET] / Admin User
+    2) Update Profile by ID [PUT] / Admin User
+    3) Reset Password by ID [PUT] / Admin User
+
+Categories :
+    1) Get all Categories [GET] / User
+    2) Get Categories by ID [GET] / User
+    3) Add Categories [POST] / Admin
+    4) Delete Categories [DELETE] / Admin
+
+Product :
+    1) List Products [GET] / User
+    2) Get Product by ID [GET] / User
+    3) Add Product [POST] / Admin
+    4) Update Product [POST] / Admin
+    5) List Products By Category [GET] / User
+    6) Delete Product [DELETE] / Admin
+
+Discount :
+    1) Get all Discounts [GET] / User
+    2) Get Discounts by ID [GET] / User
+    3) Add Discount [POST] / Admin
+    4) Get Discount By Categories [GET] / User
+
+Order :
+    1) Place Order [POST] / User
+    2) Get Order by ID [GET] / User
+    3) Cancel Order [POST] / User
+    4) Get all Order [GET] / Admin
+    5) List previous Orders by User [GET] / User
+
+Cart :
+    1) Get Cart by User [GET] / User
+    2) Add Item [POST] / User
+    3) Update Item [POST] / User
+    4) Remove Item [POST] / User
+
+Review :   
+    1) Get Review for Product [GET] / User
+    2) Add Review [POST] / User
+
+Payment :
+    1) Create Payment [POST] / User
+    2) Get Payment by Order [GET] / User
+    3) Get all Payment [GET] / Admin
+    4) Get all Payment by User [GET] / User
