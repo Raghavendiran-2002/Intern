@@ -1,0 +1,104 @@
+h1{
+    text-align: center ;
+    color: maroon;
+    background-color: pink;
+}
+
+ /*Employee Details*/
+.empcard{
+    position: relative;
+    height: 450px;
+    width: 300px;
+    border: solid 2px wheat;
+    float: left;
+    padding: 20px;
+    margin: 10px;
+}
+.empimp{
+    padding-left: 40px;
+    object-fit: fill;
+    height: 200px;
+    width: 200px;
+}
+.empName{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* NavBar Home*/
+nav{
+    background-color:pink;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav-list{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkgrey;
+}
+#nav-item{
+   margin-bottom: 40px;
+}
+
+/* Employee Add */
+h2{
+    align-self: center;
+    text-align: center ;
+    color: maroon;
+    background-color: pink;
+    border-radius: 3px;;
+    
+}
+
+/* CompanyStyle.css */
+
+form {
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 30px;
+    text-align: center;
+}
+.flex-div{
+    flex:50%;
+}
+
+#inputField{
+    width: 100%;
+    padding: 25px;
+    margin-bottom: 10px;
+    border: 1px solid #c06868;
+    border-radius: 3px;
+}
+
+#submitButton {
+    background-color: maroon;
+    color: white;
+    padding: 25px ;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+@media(max-width:767px) {
+    .flex-container,.flex-div{
+        flex:100%
+    }
+}
+*{
+    box-sizing: border-box;
+}
