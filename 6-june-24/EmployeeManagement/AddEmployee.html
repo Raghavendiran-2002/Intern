@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Details Form</title>
+    <link rel="stylesheet" href="CompanyStyle.css" crossorigin="anonymous">
+</head>
+<body>
+
+    <h2>Employee Details Form</h2>
+    <form class="flex-container" action="/submit_employee_details" method="post" enctype="multipart/form-data">
+        <div class="flex-div">
+            <label for="name">Name:</label>
+            <input id="inputField" type="text" id="name" name="name" required>
+        </div>
+        <div class="flex-div">
+            <label for="dob">Date of Birth:</label>
+            <input id="inputField" type="date" id="dob" name="dob" required>
+        </div>
+        <div class="flex-div">
+            <label for="phone">Phone:</label>
+            <input id="inputField" type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="flex-div">
+            <label for="email">Email:</label>
+            <input id="inputField" type="email" id="email" name="email" required>
+        </div>
+        <div class="flex-div">
+            <label for="blood_group">Blood Group:</label>
+            <input id="inputField" type="text" id="blood_group" name="blood_group" required>
+        </div>
+        <div class="flex-div">
+            <label for="address">Address:</label>
+            <input id="inputField" type="text" id="address" name="address" required>
+        </div>
+        <div class="flex-div">
+            <label for="position">Position:</label>
+            <input id="inputField" type="text" id="position" name="position" required>
+        </div>
+        <div class="flex-div">
+            <label for="department">Department:</label>
+            <input id="inputField" type="text" id="department" name="department" required>
+        </div>
+        <div class="flex-div">
+            <label for="date_of_joining">Date of Joining:</label>
+            <input id="inputField" type="date" id="date_of_joining" name="date_of_joining" required>
+        </div>
+        <div class="flex-div">
+            <label for="emergency_contact">Emergency Contact:</label>
+            <input  id="inputField" type="text" id="emergency_contact" name="emergency_contact" required>
+        </div>
+        <div class="flex-div">
+            <label for="picture">Upload Picture:</label>
+            <input  id="inputField" type="file" id="picture" name="picture" accept="image/*" required>
+        </div>
+        <div >
+            <button id="submitButton" type="submit">Submit</button>
+        </div>
+    </form>
+
+</body>
+</html>

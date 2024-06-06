@@ -1,0 +1,51 @@
+body {
+    background: #264ECA;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+}
+
+.login-form {
+    background: #264ECA;
+    padding: 30px;
+}
+
+.logo {
+    width: 150px;
+    height: 100px;
+}
+
+.forgot-password {
+    color: #FFFFFF;   
+}
+
+
+.author {
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+.user-icon{
+    background-color: #FFD700;
+    color: #000;
+}
+.btn-primary{
+    background-color: #FFFFFF;
+    color: #264ECA;
+    font-weight: bold;
+}
+.form-control {
+    background: #264ECA;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+.form-control::placeholder {    
+    color: #FFFFFF;
+    font-weight: 200;
+}
