@@ -1,0 +1,33 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2F80ED;
+}
+
+body {
+    background-image: url('asserts/bg.png');
+    background-size: cover;     
+    background-repeat: no-repeat; 
+    background-position: center;  
+    height: 100vh;               
+}
+
+.heading-title{
+    padding-left: 30px;
+    font-family: 'Open Sans';
+    font-size: 70px;
+    color: #2F80ED;
+    font-weight: bold;
+}
+.sub-heading-title{color: #000;}
+
+.sub-sub-heading-title{
+    font-weight: 40;
+}
+.list{
+    font-family: 'Open Sans';
+    font-size: 30px;
+    font-weight: bolder;
+    padding-left: 60px;
+}
