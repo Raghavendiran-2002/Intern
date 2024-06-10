@@ -1,33 +1,114 @@
-
 body {
+    background: linear-gradient(to top left, #007bff 50%, white 50%);
+    height: 100vh;
     margin: 0;
-    padding: 0;
-    background-color: #2F80ED;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
 
-body {
-    background-image: url('asserts/bg.png');
-    background-size: cover;     
-    background-repeat: no-repeat; 
-    background-position: center;  
-    height: 100vh;               
-}
-
-.heading-title{
-    padding-left: 30px;
-    font-family: 'Open Sans';
-    font-size: 70px;
-    color: #2F80ED;
+.title {
+    font-size: 3rem;
     font-weight: bold;
-}
-.sub-heading-title{color: #000;}
+    margin: 15px 30px;
+    width: 40%;
+    line-height: 1.1;
+  }
 
-.sub-sub-heading-title{
-    font-weight: 40;
-}
-.list{
-    font-family: 'Open Sans';
-    font-size: 30px;
+  .device-list {
+    font-weight: bold;
+    margin: 30px;
+    line-height: 1.2;
+  }
+
+  .images-container img {
+    width: 180px;
+    height: 400px;
+    position: absolute;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+
+  #img-1 {
+    bottom: 30px;
+    right: 300px;
+    z-index: 1;
+  }
+
+  #img-2 {
+    bottom: 70px;
+    right: 270px;
+  }
+
+
+  #img-3 {
+    z-index: 1;
+    bottom: 30px;
+    right: 70px;
+  }
+
+  #img-4 {
+    bottom: 70px;
+    right: 40px;
+  }
+
+
+
+  span#h1 {
+    color: blue;
     font-weight: bolder;
-    padding-left: 60px;
-}
+  }
+  span#h2 {
+    color: black;
+  }
+  span#h3 {
+    font-weight: 600;
+    color: black;
+  }
+  .header:hover {
+    text-decoration: underline;
+    text-decoration-color: blue;
+    text-decoration-thickness: 2px;
+  }
+
+  ul {
+    margin: 0px 30px;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  @media (max-width: 900px) {
+    .images-container img {
+        width: 150px;
+        height: 300px;
+        overflow-y: scroll;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+    }
+
+
+  @media (max-width: 700px) {
+    .images-container img {
+        width: 150px;
+        height: 300px;
+        flex-flow: column;
+        position: relative;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+      }
+      .body{
+        flex-direction: row;
+      }
+      #img-1 {
+        bottom: 10px;
+        right: 10px;
+        z-index: 1;
+      }
+    
+      #img-2 {
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+    
