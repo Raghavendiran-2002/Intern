@@ -1,126 +1,177 @@
-body{
+body {
     margin-top: 40px;    
     background-color: #F7F9FD !important;
 }
-/* Table */
 
+/* Table */
 .table-responsive {
     border: 1px #E1E3E7 solid;
     border-radius: 8px;
 }
-table{
+table {
     border-collapse: collapse;  
 }
 
 /* Search Bar */
-.search-container{
+.search-container {
+    display: inline;
     margin: 20px;
 }
-.filter-button{
+.filter-button {
     background-color: #FFFFFF !important;
     border-color: #DFE1E6 !important;
-    margin-right:20px;
+    margin-right: 20px;
 }
-.filter-button:hover{
+.filter-button:hover {
     background-color: #DFE1E6 !important;
-    border:2px solid #AED2FB !important;
+    border: 2px solid #AED2FB !important;
 }
-  
-.add-customer{
-    margin-left: 55%;
+.add-customer {
+    margin-left: auto;
+    margin-right: 10px;
 }
-/* Table Head */
 
+/* Table Head */
 thead th {
     background-color: #F7F9FD !important;
 }
-tr{
+tr {
     background-color: #FFFFFF !important;
 }
-
-table .table-light tr th{
-    color:#6A7180 !important;
+table .table-light tr th {
+    color: #6A7180 !important;
     font-size: small !important;
 }
 
-
 /* Table Details */
-
 .description {
     max-width: 200px;
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    color:#6A7180 !important;
+    color: #6A7180 !important;
     font-size: medium;
 }
-/* Status */
 
-tr .status-open {
+/* Status */
+tr .status-open,
+tr .status-paid,
+tr .status-inactive,
+tr .status-due {
     border-radius: 20px !important;
     text-align: center;
-    background-color: #EDEFF9;
-    color: #515AE4;
     align-items: center !important;
     width: 60px;
     font-size: small !important;
+}
+
+tr .status-open {
+    background-color: #EDEFF9;
+    color: #515AE4;
 }
 
 tr .status-paid {
-    border-radius: 20px !important;
-    align-items: center !important;
-    text-align: center;
-    width: 60px;
     background-color: #E6FBF0;
     color: #3B7E4F;
-    font-size: small !important;
-}
-tr .status-inactive {
-    border-radius: 20px !important;
-    text-align: center;
-    background-color: #EAEDF4;
-    color: #5C6374;
-    align-items: center !important;
-    width: 80px;
-    font-size: small !important;
-}
-tr .status-due {
-    flex-wrap:nowrap !important;
-    margin :10px;
-    border-radius: 20px !important;
-    text-align: center;
-    background-color: #F8F0F3;
-    color: #C23F5A;
-    align-items: center !important;
-    width: 50px;
-    font-size: small !important;
 }
 
-.light-text{
-    color:#6A7180;
+tr .status-inactive {
+    background-color: #EAEDF4;
+    color: #5C6374;
+    width: 80px;
+}
+
+tr .status-due {
+    background-color: #F8F0F3;
+    color: #C23F5A;
+    width: 50px;
+}
+
+.light-text {
+    color: #6A7180;
     font-size: small;
     align-content: end !important;
 }
 
-.balance-negative{
+.balance-negative {
     color: #CA5B73 !important;
 }
-.balance-positive{
+.balance-positive {
     color: #3C7F51 !important;
 }
 
-
-
-
-/* Pagenation */
-.page-control{
+/* Pagination */
+.page-control {
     background-color: #FFFFFF !important;
     border-color: #DFE1E6 !important;
-    margin-right:20px;
+    margin-right: 20px;
     margin-bottom: 10px;
     height: 35px;
     width: 5px;
 }
-.page-info{
+.page-info {
     text-align: center;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .add-customer {
+        margin-right: 10px;
+    }
+    .search-container {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 992px) {
+    .search-container {
+        margin-right: 5px;
+    }
+    .search-input {
+        width: 100%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .add-customer {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: scroll;
+    }
+    .search-container {
+        margin-right: 2px; 
+    }
+    .page-control {
+        margin: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .search-container {
+        margin: 5px;
+    }
+    .table-responsive {
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .page-info {
+        font-size: small;
+    }
+}
+
+@media (max-width: 400px) {
+    .search-container {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .table-responsive {
+        overflow-x: scroll;
+        overflow-y: scroll;
+    }
+    .page-info {
+        font-size:x-small;
+    }
 }
