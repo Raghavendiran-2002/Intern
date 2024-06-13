@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Products</h1>
+    <form class="form-group" id="productForm">
+        <div class="row mb-3">
+            <div class="col">
+                <input type="text" class="form-control" id="productName" placeholder="Product Name" required>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" id="productPrice" placeholder="Product Price" required>
+            </div>
+            <div class="col">
+                <input type="number" class="form-control" id="productQuantity" placeholder="Product Quantity" required>
+            </div>
+            <div class="col">
+                <button type="submit" class="btn btn-success w-100">Add Product</button>
+            </div>
+        </div>
+    </form>
+    <table class="table table-hover" id="productTable">
+        <thead>
+            <tr >
+                <th>Product Id</th>
+                <th>Product Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script>
+    var index = 1;
+document.getElementById('productForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const productName = document.getElementById('productName').value;
+    const productPrice = document.getElementById('productPrice').value;
+    const productQuantity = document.getElementById('productQuantity').value;
+
+    const table = document.getElementById('productTable').getElementsByTagName('tbody')[0];
+    const newRow = table.insertRow();
+    const PId = newRow.insertCell(0);
+    const nameCell = newRow.insertCell(1);
+    const priceCell = newRow.insertCell(2);
+    const quantityCell = newRow.insertCell(3);
+
+    PId.textContent = index++;
+    nameCell.textContent = productName;
+    priceCell.textContent = productPrice;
+    quantityCell.textContent = productQuantity;
+
+    document.getElementById('productForm').reset();
+});
+</script>
+</body>
+</html>
