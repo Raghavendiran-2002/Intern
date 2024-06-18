@@ -1,0 +1,23 @@
+body {
+    background-color: #f8f9fa;
+}
+
+h1 {
+    color: #007bff;
+}
+
+#response {
+    display: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#response.success {
+    background-color: #d4edda;
+    color: #155724;
+}
+
+#response.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
