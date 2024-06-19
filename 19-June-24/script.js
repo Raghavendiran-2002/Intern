@@ -1,6 +1,8 @@
 const quotesPerPage = 5;
 let currentPage = 1;
 let quotesData = [];
+const sortAscButton = document.getElementById("sortAsc");
+const sortDescButton = document.getElementById("sortDesc");
 
 $(document).ready(function () {
   fetchQuotes();
@@ -64,8 +66,8 @@ function setupPagination() {
     paginationHtml += `<li class="page-item ${
       i === currentPage ? "active" : ""
     }">
-                            <a class="page-link" href="#">${i}</a>
-                            </li>`;
+    <a class="page-link" href="#">${i}</a>
+    </li>`;
   }
   $("#pagination").html(paginationHtml);
 
@@ -76,3 +78,15 @@ function setupPagination() {
     setupPagination();
   });
 }
+
+sortAscButton.addEventListener("click", () => {
+  sortAscButton.classList.add("active");
+  sortDescButton.classList.remove("active");
+  loadQuotes(currentPage, searchInput.value, "asc");
+});
+
+sortDescButton.addEventListener("click", () => {
+  sortAscButton.classList.remove("active");
+  sortDescButton.classList.add("active");
+  loadQuotes(currentPage, searchInput.value, "desc");
+});
