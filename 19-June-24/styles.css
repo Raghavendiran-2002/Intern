@@ -1,0 +1,42 @@
+body {
+    padding-top: 56px;
+}
+
+#home {
+    text-align: center;
+}
+
+#quotes {
+    display: none; 
+}
+
+#quotes-container{
+    background-color: #e9e7e7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+#heading{
+    padding: 10px;
+    background-color: #e9e7e7;
+    border-radius: 10px;
+}
+
+#description{
+    padding: 10px;
+    background-color: #d8b9b9;
+    border-radius: 10px;
+}
+
+.searchblockquote{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(194, 220, 174);
+}
+
+.blockquote{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(209, 177, 177);
+}
