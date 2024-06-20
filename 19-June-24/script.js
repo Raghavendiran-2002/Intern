@@ -1,8 +1,6 @@
 const quotesPerPage = 5;
 let currentPage = 1;
 let quotesData = [];
-const sortAscButton = document.getElementById("sortAsc");
-const sortDescButton = document.getElementById("sortDesc");
 
 $(document).ready(function () {
   fetchQuotes();
@@ -22,6 +20,15 @@ function fetchQuotes() {
     setupPagination();
   });
 }
+
+const sortProducts = (products, sortOrder) => {
+  if (sortOrder === "az") {
+    return products.sort((a, b) => a.title.localeCompare(b.title));
+  } else if (sortOrder === "za") {
+    return products.sort((a, b) => b.title.localeCompare(a.title));
+  }
+  return products;
+};
 
 function displayQuotes() {
   const start = (currentPage - 1) * quotesPerPage;
@@ -79,14 +86,8 @@ function setupPagination() {
   });
 }
 
-sortAscButton.addEventListener("click", () => {
-  sortAscButton.classList.add("active");
-  sortDescButton.classList.remove("active");
-  loadQuotes(currentPage, searchInput.value, "asc");
-});
-
-sortDescButton.addEventListener("click", () => {
-  sortAscButton.classList.remove("active");
-  sortDescButton.classList.add("active");
-  loadQuotes(currentPage, searchInput.value, "desc");
+$("#sort-options").change(function () {
+  const sortOrder = $(this).val();
+  const sortedQuotes = sortProducts(quotesData, sortOrder);
+  displayQuotes(sortedQuotes);
 });

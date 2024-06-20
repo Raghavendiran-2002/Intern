@@ -36,9 +36,14 @@
             <h2 class="col-7">Quotes</h2>
             <form class="col-5 d-flex" role="search">
                 <input id="author" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button onclick="searchQuotes()" class="btn btn-outline-success" type="submit">Search</button>
-                <button id="sortAsc">Sort A-Z</button>
-                <button id="sortDesc">Sort Z-A</button>
+                <button onclick="searchQuotes()" class="me-2 btn btn-outline-success" type="submit">Search</button>
+                <!-- <button onclick="sortAsc()" class="ms-2 btn btn-outline-success" id="sortAsc">Sort A-Z</button>
+                <button onclick="sortDesc()" class="ms-2 btn btn-outline-success" id="sortDesc">Sort Z-A</button> -->
+                <select  id="sort-options" class="w-25 me-2 form-select">
+                    <option value="none">Sort by</option>
+                    <option value="az">A-Z</option>
+                    <option value="za">Z-A</option>
+                </select>
             </form>
         </div>  
         <div id="quotes-search-container" class="mt-3"></div>
