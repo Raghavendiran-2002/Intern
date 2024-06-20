@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="login.html" method="post" class="form" id="js-login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" /><br />
+      <p id="js-username-error" class="error"></p>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" /><br />
+      <p id="js-password-error" class="error"></p>
+      <input type="submit" value="Submit" />
+    </form>
+    <script>
+      const users = [
+        { username: "admin", password: "admin" },
+        { username: "user", password: "user" },
+      ];
+      const form = document.querySelector("form");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const username = document.querySelector("#username").value;
+        const password = document.querySelector("#password").value;
+        const user = users.find((user) => user.username === username);
+
+        if (!user) {
+          document.querySelector("#js-username-error").textContent =
+            "Username not found";
+          return;
+        } else {
+          document.querySelector("#js-username-error").textContent = "";
+
+          if (user.password !== password) {
+            document.querySelector("#js-password-error").textContent =
+              "Password is incorrect";
+            return;
+          } else {
+            document.querySelector("#js-password-error").textContent = "";
+            alert("Login successful");
+          }
+        }
+      });
+    </script>
+  </body>
+</html>
