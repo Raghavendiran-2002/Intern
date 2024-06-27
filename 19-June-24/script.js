@@ -21,6 +21,15 @@ function fetchQuotes() {
   });
 }
 
+const sortProducts = (products, sortOrder) => {
+  if (sortOrder === "az") {
+    return products.sort((a, b) => a.title.localeCompare(b.title));
+  } else if (sortOrder === "za") {
+    return products.sort((a, b) => b.title.localeCompare(a.title));
+  }
+  return products;
+};
+
 function displayQuotes() {
   const start = (currentPage - 1) * quotesPerPage;
   const end = start + quotesPerPage;
@@ -64,8 +73,8 @@ function setupPagination() {
     paginationHtml += `<li class="page-item ${
       i === currentPage ? "active" : ""
     }">
-                            <a class="page-link" href="#">${i}</a>
-                            </li>`;
+    <a class="page-link" href="#">${i}</a>
+    </li>`;
   }
   $("#pagination").html(paginationHtml);
 
@@ -76,3 +85,9 @@ function setupPagination() {
     setupPagination();
   });
 }
+
+$("#sort-options").change(function () {
+  const sortOrder = $(this).val();
+  const sortedQuotes = sortProducts(quotesData, sortOrder);
+  displayQuotes(sortedQuotes);
+});
