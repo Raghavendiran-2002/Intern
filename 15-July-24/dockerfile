@@ -1,0 +1,8 @@
+# Dockerfile for hosting a static site
+FROM nginx:alpine
+
+# Copy static site files to nginx directory
+COPY . /usr/share/nginx/html
+
+# Expose port 80
+EXPOSE 80
