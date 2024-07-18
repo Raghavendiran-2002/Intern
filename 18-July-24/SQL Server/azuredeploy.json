@@ -1,0 +1,58 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+      {
+        "type": "Microsoft.Sql/servers",
+        "apiVersion": "2021-02-01-preview",
+        "name": "[parameters('sqlServerName')]",
+        "location": "[parameters('location')]",
+        "properties": {
+          "administratorLogin": "[parameters('administratorLogin')]",
+          "administratorLoginPassword": "[parameters('administratorLoginPassword')]"
+        },
+        "resources": [
+          {
+            "type": "firewallRules",
+            "apiVersion": "2021-02-01-preview",
+            "name": "AllowAllWindowsAzureIps",
+            "dependsOn": [
+              "[resourceId('Microsoft.Sql/servers', parameters('sqlServerName'))]"
+            ],
+            "properties": {
+              "startIpAddress": "0.0.0.0",
+              "endIpAddress": "0.0.0.0"
+            }
+          }
+        ]
+      }
+    ],
+    "parameters": {
+      "sqlServerName": {
+        "type": "string",
+        "metadata": {
+          "description": "Name of the SQL server"
+        }
+      },
+      "location": {
+        "type": "string",
+        "defaultValue": "eastus",
+        "metadata": {
+          "description": "Location for the SQL server"
+        }
+      },
+      "administratorLogin": {
+        "type": "string",
+        "metadata": {
+          "description": "Administrator username for SQL server"
+        }
+      },
+      "administratorLoginPassword": {
+        "type": "securestring",
+        "metadata": {
+          "description": "Administrator password for SQL server"
+        }
+      }
+    }
+  }
+  

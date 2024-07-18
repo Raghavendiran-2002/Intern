@@ -1,0 +1,5 @@
+az group create --name rg_raghav --location EastUS
+
+ az deployment group create --resource-group rg_raghav --template-file azuredeploy.json --parameters sqlServerName=raghavsql administratorLogin=raghav administratorLoginPassword=pass@123
+
+ az group delete --name rg_raghav

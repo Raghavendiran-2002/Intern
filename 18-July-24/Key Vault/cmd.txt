@@ -1,0 +1,7 @@
+az group create --name rg_raghav --location WestUS2
+
+az deployment group create --resource-group rg_raghav --template-file azuredeploy.json --parameters keyVaultName=raghavSQL
+
+az keyvault secret set --vault-name raghavSQL --name "SQL" --value "sql:URL"
+
+az group delete --name rg_raghav
