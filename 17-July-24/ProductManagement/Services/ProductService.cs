@@ -39,7 +39,7 @@ namespace ProductManagement.Services
             };
         }
 
-        public async Task AddProduct(ProductDTO productDTO)
+        public async Task<Product> AddProduct(ProductDTO productDTO)
         {
             var product = new Product
             {
@@ -47,10 +47,12 @@ namespace ProductManagement.Services
                 Price = productDTO.Price,
                 ImgURL = productDTO.ImgURL
             };
-            await _repository.AddProduct(product);
+            var prd = await _repository.AddProduct(product);
+            return prd;
+
         }
 
-        public async Task UpdateProduct(int id, ProductDTO productDTO)
+        public async Task<Product> UpdateProduct(int id, ProductDTO productDTO)
         {
             var product = await _repository.GetProductById(id);
             if (product != null)
@@ -60,6 +62,7 @@ namespace ProductManagement.Services
                 product.ImgURL = productDTO.ImgURL;
                 await _repository.UpdateProduct(product);
             }
+            return product;
         }
 
         public async Task DeleteProduct(int id)

@@ -18,10 +18,16 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+const string secretName = "Swk";
+var keyVaultName = "RaghavVaultSQL";
+var kvUri = $"https://{keyVaultName}.vault.azure.net";
+var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
+var secret = await client.GetSecretAsync(secretName);
+Console.WriteLine(secret.Value.Value);
 
-
-builder.Services.AddDbContext<DBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<DBContext>(options =>{
+    options.UseSqlServer(secret.Value.Value);
+});
 
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IProductService, ProductService>();

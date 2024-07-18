@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductManagement.DTOs;
 using ProductManagement.Services;
+using Azure.Identity;
+using Azure.Security.KeyVault.Secrets;
 
 namespace ProductManagement.Controllers
 {
@@ -43,8 +45,8 @@ namespace ProductManagement.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> PutProduct(int id, ProductDTO productDTO)
         {
-            await _service.UpdateProduct(id, productDTO);
-            return NoContent();
+            var product = await _service.UpdateProduct(id, productDTO);
+            return Ok(product);
         }
 
         [HttpDelete("{id}")]
@@ -54,14 +56,10 @@ namespace ProductManagement.Controllers
             return NoContent();
         }
         [HttpGet("vault")]
-        public async Task<IActionResult> DeleteProduct(int id)
+        public async Task<IActionResult> GetVault(int id)
         {
-            const string secretName = "SQL";
-            var keyVaultName = "RaghavVaultSQL";
-            var kvUri = $"https://{keyVaultName}.vault.azure.net";
-            var client = new SecretClient(new Uri(kvUri), new DefaultAzureCredential());
-            var secret = await client.GetSecretAsync(secretName);
-            return await secret.Value.Value;
+           
+            return Ok("raghav");
         }
     }
 }
