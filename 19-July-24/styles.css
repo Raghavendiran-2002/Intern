@@ -1,0 +1,127 @@
+body {
+    background: linear-gradient(to right, #ECF4D6, #A8D8B9);
+    font-family: 'Arial', sans-serif;
+    color: #265073;
+}
+.container {
+    margin-top: 50px;
+}
+.heptagon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 300px;
+    margin: 20px auto;
+    transition: transform 0.3s ease;
+}
+.heptagon:hover {
+    transform: scale(1.05);
+}
+.heptagon div {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    background-color: #9AD0C2;
+    border: 2px solid #2D9596;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: bold;
+    color: #265073;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.heptagon div:hover {
+    transform: scale(1.1);
+    background-color: #2D9596;
+    color: #ECF4D6;
+}
+.heptagon .center {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2D9596;
+    color: #ECF4D6;
+}
+.heptagon .one { top: 0; left: 50%; transform: translateX(-50%); }
+.heptagon .two { top: 20%; right: 0; transform: translateY(-50%); }
+.heptagon .three { bottom: 20%; right: 0; transform: translateY(50%); }
+.heptagon .four { bottom: 0; left: 50%; transform: translateX(-50%); }
+.heptagon .five { bottom: 20%; left: 0; transform: translateY(50%); }
+.heptagon .six { top: 20%; left: 0; transform: translateY(-50%); }
+#inputBox {
+    font-size: 24px;
+    text-align: center;
+    border: 2px solid #2D9596;
+    width: 100%;
+}
+.progress {
+    height: 20px;
+    width: 100%;
+}
+.progress-bar {
+    font-size: 14px;
+    line-height: 20px;
+    background-color: #265073;
+    transition: width 0.5s ease;
+}
+.score {
+    font-size: 32px;
+    color: #2D9596;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 300px;
+}
+.btn-group {
+    display: flex;
+    gap: 10px;
+}
+.btn-sub {
+    background-color: #2D9596;
+    border: none;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-sub:hover {
+    background-color: #265073;
+    color: white;
+    transform: translateY(-2px);
+}
+.btn-del {
+    background-color: #9AD0C2;
+    color: black;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+.btn-del:hover {
+    background-color: #79a398;
+    color: white;
+    transform: translateY(-2px);
+}
+@media (min-width: 768px) {
+    .game-container {
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+    }
+}
+.navbar {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
